@@ -28,6 +28,7 @@ Anaconda를 통해 Python의 가상환경을 통해 개발환경을 쉽게 관�
 {% highlight yaml %}
 #version 확인
 C:\Users\oo>conda --version
+
 #Update Conda
 C:\Users\oo>conda update conda
 {% endhighlight %}
@@ -49,9 +50,11 @@ C:\Users\oo>conda create --n test python=3.5
 {% highlight yaml %}
 #만들어진 가상환경 확인
 C:\Users\oo>conda info --envs
+
 #활성화
 #C:\Users\oo>activate 가상환경명
 C:\Users\oo>activate test
+
 #비활성화
 C:\Users\oo>conda deactivate
 {% endhighlight %}
@@ -63,11 +66,14 @@ C:\Users\oo>conda deactivate
 #가상환경 활성화
 #C:\Users\oo>activate 가상환경명
 C:\Users\oo>activate test
+
 #패키지 설치
 #C:\Users\oo>conda install 패키지명
 C:\Users\oo>conda install numpy
+
 #설치된 패키지 확인
 C:\Users\oo>conda list
+
 #가상환경 캐시 정리
 #인덱스 캐시, 잠긴 파일, 사용하지 않는 패키지, 소스 캐시 등을 삭제
 C:\Users\oo>conda clean -all
