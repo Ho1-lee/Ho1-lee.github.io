@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Anaconda 사용법"
+title:  "Anaconda Manual"
 date:   2019-11-13
-excerpt: "Anaconda 사용법"
+excerpt: "Anaconda Manual"
 project: false
 tag:
 - Anaconda
@@ -13,20 +13,20 @@ comments: false
 ![Anaconda-logo](/assets/img/anaconda-logo2.png)    
     
 <center><b>Anaconda</b></center>
-     
-Anaconda를 통해 Python의 가상환경을 통해 개발환경을 쉽게 관리할 수 있다.<br>
-기본적인 사용법을 설명한다.
-      
-## 설치
-[아나콘다 설치 사이트](https://www.anaconda.com/distribution/#download-section) 을 통해 쉽게 Download 가능하다.<br>
-*PATH 설정을 통해 CMD에서 명령어 사용 가능.<br>
+
+It is easy to manage Python Developing Environment with Anaconda which can make Virtual Environment.
+I will talk about Basic Manual.
+
+## Install
+[Anaconda Install site](https://www.anaconda.com/distribution/#download-section)
+*available to use on CMD by setting environment PATH
 
 ---
 
-## Version 확인 / Update
+## Version Check / Update
 
 {% highlight yaml %}
-#version 확인
+#version Check
 C:\Users\oo>conda --version
 
 #Update Conda
@@ -35,48 +35,48 @@ C:\Users\oo>conda update conda
 
 ---
 
-## 가상환경 생성
+## Create Virtual Environment
 {% highlight yaml %}
-#가상환경 생성
-#C:\Users\oo>conda create --name(-n) 가상환경명 설치할패키지
+#Create Virtual Environment
+#C:\Users\oo>conda create --name(-n) EnvironmentName PackageName
 C:\Users\oo>conda create --name test python=3.5
-#또는
+#Or
 C:\Users\oo>conda create --n test python=3.5
 {% endhighlight %}
 
 ---
 
-## 가상환경 활성화 / 비활성화
+## Virtual Environment Activation / Deactivation
 {% highlight yaml %}
-#만들어진 가상환경 확인
+#list of Virtual Environment
 C:\Users\oo>conda info --envs
 
-#활성화
-#C:\Users\oo>activate 가상환경명
+#Activation
+#C:\Users\oo>activate EnvironmentName
 C:\Users\oo>activate test
 
-#비활성화
+#Deactivation
 C:\Users\oo>conda deactivate
 {% endhighlight %}
 
 ---
 
-## 패키지 설치 / 확인
+## Package Install / Check
 {% highlight yaml %}
-#가상환경 활성화
-#C:\Users\oo>activate 가상환경명
+#Virtual Environment Activation
+#C:\Users\oo>activate EnvironmentName
 C:\Users\oo>activate test
 
-#패키지 설치
-#C:\Users\oo>conda install 패키지명
+#Package Install
+#C:\Users\oo>conda install PackageName
 C:\Users\oo>conda install numpy
 
-#설치된 패키지 확인
+#Check Installed Package
 C:\Users\oo>conda list
 
-#가상환경 캐시 정리
-#인덱스 캐시, 잠긴 파일, 사용하지 않는 패키지, 소스 캐시 등을 삭제
+#Clear up Virtual Environment
+#delete Index cache, locked file, unused package, source cache
 C:\Users\oo>conda clean -all
-#또는
+#Or
 C:\Users\oo>conda clean -a
 {% endhighlight %}
