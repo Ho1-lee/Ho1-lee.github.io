@@ -21,15 +21,38 @@ Anaconda를 통해 Python의 가상환경을 통해 개발환경을 쉽게 관�
 [아나콘다 설치 사이트](https://www.anaconda.com/distribution/#download-section) 을 통해 쉽게 Download 가능하다.<br>
 *PATH 설정을 통해 CMD에서 명령어 사용 가능.<br>
 
+---
+
 ## Version 확인 및 Update
 
 {% highlight yaml %}
 #version 확인
 C:\Users\oo>conda --version
+#Update Conda
 C:\Users\oo>conda update conda
 {% endhighlight %}
 
 ---
+
+##가상환경 생성
+{% highlight yaml %}
+#가상환경 생성
+#C:\Users\oo>conda create --name(-n) 가상환경명 설치할패키지
+C:\Users\oo>conda create --name test python=3.5
+#또는
+C:\Users\oo>conda create --n test python=3.5
+{% endhighlight %}
+
+---
+
+##가상환경 활성화, 비활성화
+{% highlight yaml %}
+#가상환경 생성
+#C:\Users\oo>conda create --name(-n) 가상환경명 설치할패키지
+C:\Users\oo>conda create --name test python=3.5
+#또는
+C:\Users\oo>conda create --n test python=3.5
+{% endhighlight %}
 
 {% capture images %}
 	https://cloud.githubusercontent.com/assets/754514/14509718/61b09a20-01d6-11e6-8da1-4202ae4d83cd.png
