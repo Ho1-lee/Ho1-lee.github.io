@@ -18,16 +18,16 @@ Anaconda를 통해 Python의 가상환경을 통해 개발환경을 쉽게 관�
 기본적인 사용법을 설명한다.
       
 ## 설치
-[아나콘다 설치 사이트](https://www.anaconda.com/distribution/#download-section) 을 통해 쉽게 Download 가능하다.
+[아나콘다 설치 사이트](https://www.anaconda.com/distribution/#download-section) 을 통해 쉽게 Download 가능하다.<br>
+*PATH 설정을 통해 CMD에서 명령어 사용 가능.<br>
 
-## Preview
+## Version 확인 및 Update
 
-{% capture images %}
-	https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-	https://cloud.githubusercontent.com/assets/754514/14509717/61ad05ae-01d6-11e6-85ae-5a817dd8763b.png
-	https://cloud.githubusercontent.com/assets/754514/14509714/61a89708-01d6-11e6-8fcd-74b002a060df.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=3 %}
+{% highlight yaml %}
+#version 확인
+C:\Users\oo>conda --version
+C:\Users\oo>conda update conda
+{% endhighlight %}
 
 ---
 
