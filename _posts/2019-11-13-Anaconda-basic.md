@@ -3,7 +3,7 @@ layout: post
 title:  "Anaconda 사용법"
 date:   2019-11-13
 excerpt: "Anaconda 사용법"
-project: true
+project: false
 tag:
 - Anaconda
 - Environment
@@ -17,14 +17,8 @@ comments: true
 Anaconda를 통해 Python의 가상환경을 통해 개발환경을 쉽게 관리할 수 있다.<br>
 기본적인 사용법을 설명한다.
       
-## Installation
-* Fork the [Moon repo](https://github.com/TaylanTatli/Moon/fork)
-* Edit `_config.yml` file.
-* Remove sample posts from `_posts` folder and add yours.
-* Edit `index.md` file in `about` folder.
-* Change repo name to `YourUserName.github.io`    
-     
-That's all.
+## 설치
+https://www.anaconda.com/distribution/#download-section 을 통해 쉽게 Download 가능하다.
 
 ## Preview
 
