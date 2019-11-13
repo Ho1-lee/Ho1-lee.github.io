@@ -65,7 +65,7 @@ C:\Users\oo>conda deactivate
 C:\Users\oo>activate test
 #패키지 설치
 #C:\Users\oo>conda install 패키지명
-C:\Users\oo>conda install
+C:\Users\oo>conda install numpy
 #설치된 패키지 확인
 C:\Users\oo>conda list
 #가상환경 캐시 정리
