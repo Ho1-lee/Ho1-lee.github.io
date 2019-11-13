@@ -34,7 +34,7 @@ C:\Users\oo>conda update conda
 
 ---
 
-##가상환경 생성
+## 가상환경 생성
 {% highlight yaml %}
 #가상환경 생성
 #C:\Users\oo>conda create --name(-n) 가상환경명 설치할패키지
@@ -45,7 +45,7 @@ C:\Users\oo>conda create --n test python=3.5
 
 ---
 
-##가상환경 활성화 / 비활성화
+## 가상환경 활성화 / 비활성화
 {% highlight yaml %}
 #만들어진 가상환경 확인
 C:\Users\oo>conda info --envs
@@ -58,7 +58,7 @@ C:\Users\oo>conda deactivate
 
 ---
 
-##패키지 설치 / 확인
+## 패키지 설치 / 확인
 {% highlight yaml %}
 #가상환경 활성화
 #C:\Users\oo>activate 가상환경명
