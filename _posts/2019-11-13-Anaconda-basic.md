@@ -10,7 +10,7 @@ tag:
 comments: true
 ---
 
-![Anaconda-logo]({{ site.url }}/asset/img/anaconda-logo2.png)    
+![Anaconda-logo](assets/img/anaconda-logo2.png)    
     
 <center><b>Moon</b> is a minimal, one column jekyll theme.</center>
      
