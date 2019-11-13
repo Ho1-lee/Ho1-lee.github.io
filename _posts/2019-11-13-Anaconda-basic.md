@@ -7,7 +7,7 @@ project: false
 tag:
 - Anaconda
 - Environment
-comments: true
+comments: false
 ---
 
 ![Anaconda-logo](/assets/img/anaconda-logo2.png)    
