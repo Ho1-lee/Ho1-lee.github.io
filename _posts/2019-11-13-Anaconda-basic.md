@@ -18,7 +18,7 @@ Anaconda를 통해 Python의 가상환경을 통해 개발환경을 쉽게 관�
 기본적인 사용법을 설명한다.
       
 ## 설치
-https://www.anaconda.com/distribution/#download-section 을 통해 쉽게 Download 가능하다.
+[아나콘다 설치 사이트](https://www.anaconda.com/distribution/#download-section) 을 통해 쉽게 Download 가능하다.
 
 ## Preview
 
