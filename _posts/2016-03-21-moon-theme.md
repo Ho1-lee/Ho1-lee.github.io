@@ -10,6 +10,7 @@ tag:
 - blog
 - about
 - theme
+- Deep Learning
 comments: true
 ---
 
