@@ -31,3 +31,4 @@ C:\Users\oo>conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 
 #Install Pytorch(CPU)
 C:\Users\oo>conda install pytorch-cpu –c pytorch
+{% endhighlight %}
