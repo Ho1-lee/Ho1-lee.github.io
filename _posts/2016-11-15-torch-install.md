@@ -11,7 +11,6 @@ tag:
 comments: false
 ---
 
-![Anaconda-logo](/assets/img/anaconda-logo2.png)
 ![Pytorch-logo](/assets/img/pytorch_logo.jpeg)
 <center><b>Anaconda+pytorch</b></center>
 
