@@ -17,6 +17,7 @@ comments: false
 
 
 ## Pytorch Installation using Anaconda
+<b>Windows</b>
 {% highlight yaml %}
 #Cuda Version Check
 C:\Users\oo>nvcc --version
@@ -25,6 +26,9 @@ C:\Users\oo>nvcc --version
 #C:\Users\oo>activate <b>EnvironmentName</b>
 C:\Users\oo>activate torch37
 
-#Install Pytorch
-#conda install pytorch torchvision cudatoolkit=<b>Cuda Version</b> -c pytorch
-conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+#Install Pytorch(GPU)
+#C:\Users\oo>conda install pytorch torchvision cudatoolkit=<b>Cuda Version</b> -c pytorch
+C:\Users\oo>conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+
+#Install Pytorch(CPU)
+C:\Users\oo>conda install pytorch-cpu –c pytorch
