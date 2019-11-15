@@ -38,7 +38,7 @@ C:\Users\oo>conda update conda
 ## Create Virtual Environment
 {% highlight yaml %}
 #Create Virtual Environment
-#C:\Users\oo>conda create --name(-n) EnvironmentName PackageName
+#C:\Users\oo>conda create --name(-n) <b>EnvironmentName PackageName</b>
 C:\Users\oo>conda create --name test python=3.5
 #Or
 C:\Users\oo>conda create --n test python=3.5
@@ -52,7 +52,7 @@ C:\Users\oo>conda create --n test python=3.5
 C:\Users\oo>conda info --envs
 
 #Activation
-#C:\Users\oo>activate EnvironmentName
+#C:\Users\oo>activate <b>EnvironmentName</b>
 C:\Users\oo>activate test
 
 #Deactivation
@@ -64,18 +64,24 @@ C:\Users\oo>conda deactivate
 ## Package Install / Check
 {% highlight yaml %}
 #Virtual Environment Activation
-#C:\Users\oo>activate EnvironmentName
+#C:\Users\oo>activate <b>EnvironmentName</b>
 C:\Users\oo>activate test
 
 #Package Install
-#C:\Users\oo>conda install PackageName
+#C:\Users\oo>conda install <b>PackageName</b>
 C:\Users\oo>conda install numpy
 
 #Check Installed Package
 C:\Users\oo>conda list
+{% endhighlight %}
+---
+## Remove / Clean
+{% highlight yaml %}
+#Remove Virtual Environment
+#C:\Users\oo>conda remove --name <b>EnvironmentName</b>
+C:\Users\oo>conda remove --name tensorflow35 --all
 
-#Clear up Virtual Environment
-#delete Index cache, locked file, unused package, source cache
+#Delete useless(Index cache, locked file, unused package, source cache) things in Virtual Environment
 C:\Users\oo>conda clean -all
 #Or
 C:\Users\oo>conda clean -a
