@@ -3,7 +3,7 @@ layout: post
 title:  "Pytorch Installation using Anaconda"
 date:   2019-11-15
 excerpt: "Pytorch Installation"
-project: false
+project: true
 tag:
 - Anaconda
 - Environment
