@@ -81,7 +81,7 @@ C:\Users\oo>conda list
 #C:\Users\oo>conda remove --name <b>EnvironmentName</b>
 C:\Users\oo>conda remove --name tensorflow35 --all
 
-#Delete useless(Index cache, locked file, unused package, source cache) things in Virtual Environment
+#Delete useless(Index cache, locked file, unused package, source cache) things
 C:\Users\oo>conda clean -all
 #Or
 C:\Users\oo>conda clean -a
