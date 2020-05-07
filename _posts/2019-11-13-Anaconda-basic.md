@@ -3,7 +3,6 @@ layout: post
 title:  "Anaconda Manual"
 date:   2019-11-13
 excerpt: "Anaconda Manual"
-project: false
 tag:
 - Anaconda
 - Environment
