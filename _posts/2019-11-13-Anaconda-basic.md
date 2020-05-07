@@ -2,7 +2,6 @@
 layout: post
 title:  "Anaconda Manual"
 date:   2019-11-13
-excerpt: "Anaconda Manual"
 excerpt: "How to Set Anaconda Environment(Basic)"
 tag:
 - Anaconda
