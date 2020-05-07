@@ -15,8 +15,9 @@ comments: false
 
 For Simple Virtual Environment, it is easier to use Python Virtual Environment than Anaconda.
 
-## Instal
-[Anaconda Install site](https://www.anaconda.com/distribution/#download-section)
+## Change Python Version
+1. Install Ohter Python
+[Anaconda Install site](https://www.python.org/downloads/)
 *available to use on CMD by setting environment PATH
 
 ---
