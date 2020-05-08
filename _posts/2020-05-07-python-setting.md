@@ -29,11 +29,11 @@ C:\Users\oo>sudo update-alternatives --config python /usr/bin/python3.6
 
 ---
 
-## Version Check / Update
+## Make Virtual Environment
 
 {% highlight yaml %}
-#version Check
-C:\Users\oo>conda --version
+#Make Virtual Environment
+C:\Users\oo>python -m venv {name_venv}
 
 #Update Conda
 C:\Users\oo>conda update conda
