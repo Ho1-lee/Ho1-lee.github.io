@@ -33,7 +33,7 @@ C:\Users\oo>sudo update-alternatives --config python /usr/bin/python3.6
 
 {% highlight yaml %}
 #Make Virtual Environment
-C:\Users\oo>python -m venv {name_venv}
+C:\Users\oo>python -m venv venv_name
 
 #Update Conda
 C:\Users\oo>conda update conda
