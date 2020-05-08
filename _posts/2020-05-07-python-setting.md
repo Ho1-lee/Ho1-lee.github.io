@@ -21,6 +21,13 @@ For Simple Virtual Environment, it is easier to use Python Virtual Environment t
 [Python Install site](https://www.python.org/downloads/)
 
 
+2. Change Python Version
+
+{% highlight yaml %}
+#Change Version for Python Command
+C:\Users\oo>sudo update-alternatives --config python /usr/bin/python3.6
+{% endhighlight %}
+
 ---
 
 ## Version Check / Update
