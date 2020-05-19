@@ -39,7 +39,7 @@ Xavier makes much better result for Sigmoid. But, it is bad idea using Xavier fo
 
 ## He Initialization
 
-He Initialization is made for ReLU. It's very similar with Xavier. But, it scales weights by Square root of half input data number(\\( 1/\(sqrt{n/2}) \\)).
+He Initialization is made for ReLU. It's very similar with Xavier. But, it scales weights by Square root of half input data number(\\( 1/\sqrt{n/2} \\)).
 
 {% highlight yaml %}
 w = np.random.randn(n_input,n_output)/sqrt(n_input/2)
