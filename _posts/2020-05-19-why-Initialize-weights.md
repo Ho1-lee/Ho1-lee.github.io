@@ -68,3 +68,6 @@ ho@ho1:~$ python -m pip install --upgrade pip
 ho@ho1:~$ python -m pip install opencv-python
 {% endhighlight %}
 
+---
+## Reference
+https://gomguard.tistory.com/184
