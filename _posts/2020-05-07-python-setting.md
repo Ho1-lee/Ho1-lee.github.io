@@ -24,7 +24,7 @@ For Simple Virtual Environment, it is easier to use Python Virtual Environment t
 
 {% highlight yaml %}
 #Change Version for Python Command
-C:\Users\oo>sudo update-alternatives --config python /usr/bin/python3.6
+ho@ho1:~$ sudo update-alternatives --config python /usr/bin/python3.6
 {% endhighlight %}
 
 ---
@@ -33,62 +33,36 @@ C:\Users\oo>sudo update-alternatives --config python /usr/bin/python3.6
 
 {% highlight yaml %}
 #Make Virtual Environment
-C:\Users\oo>python -m venv venv_name
-
-#Update Conda
-C:\Users\oo>conda update conda
+#ho@ho1:~$ python -m venv {venv_name}
+ho@ho1:~$ python -m venv my_venv
 {% endhighlight %}
 
 ---
 
-## Create Virtual Environment
+## Activate & Deactivate Virtual Environment
 {% highlight yaml %}
-#Create Virtual Environment
-#C:\Users\oo>conda create --name(-n) <b>EnvironmentName PackageName</b>
-C:\Users\oo>conda create --name test python=3.5
-#Or
-C:\Users\oo>conda create --n test python=3.5
+#Make Virtual Environment
+#ho@ho1:~$ source ./{venv_name}/bin/activate
+ho@ho1:~$ source ./my_venv/bin/activate
+
+#Deactivate
+ho@ho1:~$ Deactivate
 {% endhighlight %}
 
 ---
 
-## Virtual Environment Activation / Deactivation
+## Update 'pip' on Virtual Environment
 {% highlight yaml %}
-#list of Virtual Environment
-C:\Users\oo>conda info --envs
-
-#Activation
-#C:\Users\oo>activate <b>EnvironmentName</b>
-C:\Users\oo>activate test
-
-#Deactivation
-C:\Users\oo>conda deactivate
+#Update 'pip'
+ho@ho1:~$ python -m pip install --upgrade pip
 {% endhighlight %}
 
 ---
 
-## Package Install / Check
+## Install Module with 'pip'
 {% highlight yaml %}
-#Virtual Environment Activation
-#C:\Users\oo>activate <b>EnvironmentName</b>
-C:\Users\oo>activate test
-
-#Package Install
-#C:\Users\oo>conda install <b>PackageName</b>
-C:\Users\oo>conda install numpy
-
-#Check Installed Package
-C:\Users\oo>conda list
+#Install Module
+#ho@ho1:~$ python -m pip install {Module_Name}
+ho@ho1:~$ python -m pip install opencv-python
 {% endhighlight %}
----
-## Remove / Clean
-{% highlight yaml %}
-#Remove Virtual Environment
-#C:\Users\oo>conda remove --name <b>EnvironmentName</b>
-C:\Users\oo>conda remove --name tensorflow35 --all
 
-#Delete useless(Index cache, locked file, unused package, source cache) things
-C:\Users\oo>conda clean -all
-#Or
-C:\Users\oo>conda clean -a
-{% endhighlight %}
