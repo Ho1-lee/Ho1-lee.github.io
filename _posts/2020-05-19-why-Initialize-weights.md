@@ -25,9 +25,17 @@ Using Weights in Gaussian Distribution which has variance 0.01 makes much more m
 
 ## Xavier Initialization
 
-Output from layers should have Gaussian Distribution to get a stable train. Xavier Initialization is scaling weights by Square root of input data number(\\( 1/\sqrt{n} \\)).
+Output from layers should have Gaussian Distribution to get a stable train. Xavier Initialization is scaling weights by Square root of input data number(\\( 1/\(sqrt{n}) \\)).
 
 ![Sigmoid_Xavier](/assets/img/Sigmoid_Xavier.png)
+
+Xavier makes much better result for Sigmoid. But, it is bad idea using Xavier for RELU.
+
+---
+
+## He Initialization
+
+
 
 ---
 ## Reference
