@@ -25,18 +25,36 @@ Using Weights in Gaussian Distribution which has variance 0.01 makes much more m
 
 ## Xavier Initialization
 
-Output from layers should have Gaussian Distribution to get a stable train. Xavier Initialization is scaling weights by Square root of input data number(\\( 1/\(sqrt{n}) \\)).
+Output from layers should have Gaussian Distribution to get a stable train. Xavier Initialization is scaling weights by Square root of input data number(\\( 1/\sqrt{n} \\)).
+
+{% highlight yaml %}
+w = np.random.randn(n_input,n_output)/sqrt(n_input)
+{% endhighlight %}
 
 ![Sigmoid_Xavier](/assets/img/Sigmoid_Xavier.png)
 
-Xavier makes much better result for Sigmoid. But, it is bad idea using Xavier for RELU.
+Xavier makes much better result for Sigmoid. But, it is bad idea using Xavier for ReLU.
 
 ---
 
 ## He Initialization
 
+He Initialization is made for ReLU. It's very similar with Xavier. But, it scales weights by Square root of half input data number(\\( 1/\squrt{n/2} \\)).
 
+{% highlight yaml %}
+w = np.random.randn(n_input,n_output)/sqrt(n_input/2)
+{% endhighlight %}
+
+![He_ReLU](/assets/img/He_ReLU.png)
 
 ---
+
+## Conclusion
+
+For Sigmoid or Tanh, Use Xavier Initialization!
+For ReLU, Use He Initialization!
+
+---
+
 ## Reference
 https://gomguard.tistory.com/184
