@@ -11,62 +11,21 @@ comments: false
 
 When using Weights in Gaussian Distribution which has mean 0 and variance 1, Output tends to be 0 or 1. Sigmoid's Gradient Vanishing near 0 and 1 is the reason. We can figure it out with not only Changing Activation Fuction but also Initializing Weights.
 
-![Anaconda-logo](/assets/img/Sigmoid_0_1.png)    
+![Sigmoid_0_1](/assets/img/Sigmoid_0_1.png)    
     
 ---
 
-For Simple Virtual Environment, it is easier to use Python Virtual Environment than Anaconda.
+## Using Gaussian Distribution which has smaller Variance
 
-## Change Python Version
-1. Install Ohter Python
-([Python Install site](https://www.python.org/downloads/))
+Using Weights in Gaussian Distribution which has variance 0.01 makes much better result.
 
-
-2. Change Python Version
-
-{% highlight yaml %}
-#Change Version for Python Command
-ho@ho1:~$ sudo update-alternatives --config python /usr/bin/python3.6
-{% endhighlight %}
+![Sigmoid_0_01](/assets/img/sigmoid_0_01.png)
 
 ---
 
-## Make Virtual Environment
+## Xavier Initialization
 
-{% highlight yaml %}
-#Make Virtual Environment
-#ho@ho1:~$ python -m venv {venv_name}
-ho@ho1:~$ python -m venv my_venv
-{% endhighlight %}
 
----
-
-## Activate & Deactivate Virtual Environment
-{% highlight yaml %}
-#Make Virtual Environment
-#ho@ho1:~$ source ./{venv_name}/bin/activate
-ho@ho1:~$ source ./my_venv/bin/activate
-
-#Deactivate
-ho@ho1:~$ Deactivate
-{% endhighlight %}
-
----
-
-## Update 'pip' on Virtual Environment
-{% highlight yaml %}
-#Update 'pip'
-ho@ho1:~$ python -m pip install --upgrade pip
-{% endhighlight %}
-
----
-
-## Install Module with 'pip'
-{% highlight yaml %}
-#Install Module
-#ho@ho1:~$ python -m pip install {Module_Name}
-ho@ho1:~$ python -m pip install opencv-python
-{% endhighlight %}
 
 ---
 ## Reference
