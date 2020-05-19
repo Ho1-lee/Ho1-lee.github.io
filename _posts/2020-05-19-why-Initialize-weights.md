@@ -17,7 +17,7 @@ When using Weights in Gaussian Distribution which has mean 0 and variance 1, Out
 
 ## Using Gaussian Distribution which has smaller Variance
 
-Using Weights in Gaussian Distribution which has variance 0.01 makes much better result.
+Using Weights in Gaussian Distribution which has variance 0.01 makes much more meaningful result.
 
 ![Sigmoid_0_01](/assets/img/sigmoid_0_01.png)
 
@@ -25,7 +25,7 @@ Using Weights in Gaussian Distribution which has variance 0.01 makes much better
 
 ## Xavier Initialization
 
-
+Output from layers should have Gaussian Distribution to get a stable train. Xavier Initialization is scaling weights by Square root of input data number(\sqrt{n}).
 
 ---
 ## Reference
