@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Manacher Algorithm"
+title:  "Manacher's Algorithm"
 date:   2021-01-27
 excerpt: "Longest Palindromic Substring"
 tag:
@@ -9,14 +9,14 @@ tag:
 - Palindromic Substring
 comments: false
 ---
-
-![Anaconda-logo](/assets/img/python-logo.png)    
+## What is 'palindromic Substring'?
+![Anaconda-logo](/assets/img/palindromic.png)
     
-<center><b>Python</b></center>
+<center><b>Palindromic String</b></center>
 
-For Simple Virtual Environment, it is easier to use Python Virtual Environment than Anaconda.
+A string is what is a palindrome if the string read from left to right is equal to the string read from right to left.
 
-## Change Python Version
+## Manacher's Algorithm
 1. Install Ohter Python
 ([Python Install site](https://www.python.org/downloads/))
 
