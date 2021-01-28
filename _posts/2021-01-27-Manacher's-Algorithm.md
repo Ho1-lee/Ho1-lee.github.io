@@ -37,7 +37,7 @@ Manacher's Algorithm is most powerful to find Palindromic Substring in a string.
 2. $$index$$ will change from 0 to $$N$$(string length) and calculate how long(A) can make palindrome with $$index$$.
 3. Check if $$index$$ that is calculating could be part of palindrome which alread made before. When $$j$$ change from 0 to $$index$$, $$r = max(j+A[j])$$. $$p$$ is $$j$$ which makes maximum $$r$$.
 4. (case $$index>r$$) If not, $$A[index]$$ need to initialize 0. Because previous results can't help calculating how long(A) can make palindrome with $$index$$. $$A[index]=0$$
-<img src="/assets/img/in_palindrome.png" width="500px" height="200px"/>
+<img src="/assets/img/in_palindrome.png" width="1000" height="400"/>
 5. (case $$index<=r$$)In opposite case, we can use previous results. Find $$index$$'s symmetry point with $$p$$. $$A[index]=A[2p-index]$$
 ![out](/assets/img/out_palindrome.png){: width = "500"}{: .center}
 6. After initializing $$A[index]$$, increase $$A[index]$$ while $$S[index-A[index]]=S[index+A[index]]$$.
