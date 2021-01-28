@@ -33,14 +33,15 @@ We could solve it in $$O(n^2)$$ time complexity using only constant space.
 ---
 ## Manacher's Algorithm
 Manacher's Algorithm is most powerful to find Palindromic Substring in a string. It has $$O(n)$$ time complexity. It reduces time complexity by using previous results. Let's see how it works.
-1. $$index$$ will change from 0 to $$N$$(string length) and calculate how long(A) can make palindrome with $$index$$.
-2. Check if $$index$$ that is calculating could be part of palindrome which alread made before. When $$j$$ change from 0 to $$index$$, $$r = max(j+A[j])$$. $$p$$ is $$j$$ which makes maximum $$r$$.
-3. (case $$index>r$$) If not, $$A[index]$$ need to initialize 0. Because previous results can't help calculating how long(A) can make palindrome with $$index$$. $$A[index]=0$$
-![in](/assets/img/in_palindrome.png){: width = "500"}{: .center}
+1. Manacher's algorithm can't find palindrome with even-characters. So, we need to insert '#' or some characters to find it. For example, 'banana' should be transformed 'b#a#n#a#n#a'.
+2. $$index$$ will change from 0 to $$N$$(string length) and calculate how long(A) can make palindrome with $$index$$.
+3. Check if $$index$$ that is calculating could be part of palindrome which alread made before. When $$j$$ change from 0 to $$index$$, $$r = max(j+A[j])$$. $$p$$ is $$j$$ which makes maximum $$r$$.
+4. (case $$index>r$$) If not, $$A[index]$$ need to initialize 0. Because previous results can't help calculating how long(A) can make palindrome with $$index$$. $$A[index]=0$$
+![in](/assets/img/in_palindrome.png){: width = "500",height="300"}
 <img src="/assets/img/in_palindrome.png" width="100%">
-4. (case $$index<=r$$)In opposite case, we can use previous results. Find $$index$$'s symmetry point with $$p$$. $$A[index]=A[2p-index]$$
+5. (case $$index<=r$$)In opposite case, we can use previous results. Find $$index$$'s symmetry point with $$p$$. $$A[index]=A[2p-index]$$
 ![out](/assets/img/out_palindrome.png){: width = "500"}{: .center}
-5. After initializing $$A[index]$$, increase $$A[index]$$ while $$S[index-A[index]]=S[index+A[index]]$$.
+6. After initializing $$A[index]$$, increase $$A[index]$$ while $$S[index-A[index]]=S[index+A[index]]$$.
 Half of palindrome's charaters don't need to calculate by using symmetry point's result. It is the reason why time complexity reduces.
 
 {% highlight yaml %}
