@@ -11,7 +11,6 @@ comments: false
 ---
 ## What is 'palindromic string'?
 ![palindromic](/assets/img/palindromic.png)
-<img src="/assets/img/palindromic.png" width="50%"/>
     
 <center><b>Palindromic String</b></center>
 
@@ -38,10 +37,10 @@ Manacher's Algorithm is most powerful to find Palindromic Substring in a string.
 2. $$index$$ will change from 0 to $$N$$(string length) and calculate how long(A) can make palindrome with $$index$$.
 3. Check if $$index$$ that is calculating could be part of palindrome which alread made before. When $$j$$ change from 0 to $$index$$, $$r = max(j+A[j])$$. $$p$$ is $$j$$ which makes maximum $$r$$.
 4. (case $$index>r$$) If not, $$A[index]$$ need to initialize 0. Because previous results can't help calculating how long(A) can make palindrome with $$index$$. $$A[index]=0$$
-<img src="/assets/img/in_palindrome.png" width="20%"/>
+<img src="/assets/img/in_palindrome.png">
 5. (case $$index<=r$$)In opposite case, we can use previous results. Find $$index$$'s symmetry point with $$p$$. $$A[index]=A[2p-index]$$
-![out](/assets/img/out_palindrome.png){: width = "500"}{: .center}
-6. After initializing $$A[index]$$, increase $$A[index]$$ while $$S[index-A[index]]=S[index+A[index]]$$.
+<img src="/assets/img/out_palindrome.png">
+6.  After initializing $$A[index]$$, increase $$A[index]$$ while $$S[index-A[index]]=S[index+A[index]]$$.
 Half of palindrome's charaters don't need to calculate by using symmetry point's result. It is the reason why time complexity reduces.
 
 {% highlight yaml %}
