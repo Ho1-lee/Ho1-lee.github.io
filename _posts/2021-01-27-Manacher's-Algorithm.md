@@ -11,6 +11,7 @@ comments: false
 ---
 ## What is 'palindromic string'?
 ![palindromic](/assets/img/palindromic.png)
+<img src="/assets/img/palindromic.png" width="50%"/>
     
 <center><b>Palindromic String</b></center>
 
