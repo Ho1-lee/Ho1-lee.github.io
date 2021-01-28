@@ -1,6 +1,6 @@
 # Site
 title:              Simple Learning
-bio:                '(Computer Vision, Autonomous, Deep Learning.)'
+bio:                '(Computer Vision, Algorithm, Deep Learning.)'
 description:        "ho"
 reading_time:       true
 words_per_minute:   200
@@ -40,7 +40,7 @@ disqus_shortname:   taylantatli
 email:               howon_lee@kist.re.kr
 #twitter:            username
 #facebook:           username
-github-url:         Ho1-lee
+#github-url:         Ho1-lee
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
