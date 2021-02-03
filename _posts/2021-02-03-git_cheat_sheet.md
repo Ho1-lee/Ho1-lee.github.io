@@ -16,39 +16,39 @@ Git is the Open source manager system which can be used GitHub. Let's see common
 ---
 ## Commands
 1. User information
-{% highlight yaml %}
-git config credential.helper store
-{% endhighlight %}
+    {% highlight yaml %}
+    git config credential.helper store
+    {% endhighlight %}
 
 2. initialize / clone
-{% highlight yaml %}
-git init
-git clone [url]
-{% endhighlight %}
+    {% highlight yaml %}
+    git init
+    git clone [url]
+    {% endhighlight %}
 
 3. status
-{% highlight yaml %}
-git status
-{% endhighlight %}
+    {% highlight yaml %}
+    git status
+    {% endhighlight %}
 
 4. pull
-{% highlight yaml %}
-git pull
-{% endhighlight %}
+    {% highlight yaml %}
+    git pull
+    {% endhighlight %}
 
 5. push
-{% highlight yaml %}
-git add .
-git commit -m '(comment)'
-git push -u origin master
-{% endhighlight %}
+    {% highlight yaml %}
+    git add .
+    git commit -m '(comment)'
+    git push -u origin master
+    {% endhighlight %}
 
 6. log
-{% highlight yaml %}
-git log
-{% endhighlight %}
+    {% highlight yaml %}
+    git log
+    {% endhighlight %}
 
 7. checkout
-{% highlight yaml %}
-git checkout (hash) .
-{% endhighlight %}
+    {% highlight yaml %}
+    git checkout (hash) .
+    {% endhighlight %}
