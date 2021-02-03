@@ -17,30 +17,38 @@ Git is the Open source manager system which can be used GitHub. Let's see common
 ## Commands
 1. User information
 {% highlight yaml %}
-git config --global user.name "(id)"
+git config credential.helper store
 {% endhighlight %}
 
+2. initialize / clone
 {% highlight yaml %}
-class Solution:
-    def longestPalindrome(self, s: str) -> str:
-        #step1
-        T = '#'.join(f'#{s}#')
-        n = len(T)
-        A = [0] * n
-        r = p = 0
-        #step2
-        for i in range(1, n - 1):
-        #step4,5
-            A[i] = (r > i) and min(r - i, A[2 * p - i]) 
-        #step6
-            while i - 1 - A[i] >= 0 and i + 1 + A[i] < n and \
-                    T[i + 1 + A[i]] == T[i - 1 - A[i]]:
-                A[i] += 1
-        #step3
-            if i + A[i] > r:
-                p, r = i, i + A[i]
-        maxLen, centerIndex = max((n, i) for i, n in enumerate(A))
-        return s[(centerIndex - maxLen) // 2: (centerIndex + maxLen) // 2]
+git init
+git clone [url]
 {% endhighlight %}
 
+3. status
+{% highlight yaml %}
+git status
+{% endhighlight %}
 
+4. pull
+{% highlight yaml %}
+git pull
+{% endhighlight %}
+
+5. push
+{% highlight yaml %}
+git add .
+git commit -m '(comment)'
+git push -u origin master
+{% endhighlight %}
+
+6. log
+{% highlight yaml %}
+git log
+{% endhighlight %}
+
+7. checkout
+{% highlight yaml %}
+git checkout (hash) .
+{% endhighlight %}
