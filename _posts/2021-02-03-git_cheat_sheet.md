@@ -26,6 +26,13 @@ Git is the Open source manager system which can be used GitHub. Let's see common
     git clone [url]
     {% endhighlight %}
 
+- remote add
+    {% highlight yaml %}
+    git remote add origin [url]
+    #if 'already exist' error
+    git remote rm origin
+    {% endhighlight %}
+
 - status
     {% highlight yaml %}
     git status
